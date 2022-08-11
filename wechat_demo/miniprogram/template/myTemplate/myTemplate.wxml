@@ -1,0 +1,6 @@
+<template name='myApp'>
+    <view>
+        <text>测试template模板</text>
+        <text class='title'>{{title}}</text>
+    </view>
+</template>

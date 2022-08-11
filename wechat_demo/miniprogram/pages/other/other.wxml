@@ -1,0 +1,10 @@
+<!--pages/other/other.wxml-->
+<import src="/template/myTemplate/myTemplate.wxml" />
+<view>
+    <text>pages/other/other.wxml</text>
+    <template is="myApp" data="{{title}}"></template>
+    <view>~~~~~~~~~~~~~~~~~~~~~~~~~</view>
+    <view>~~~~~~~~~~~~~~~~~~~~~~~~~</view>
+    <button bindtap="handleGetOpenId">获取用户openid</button>
+</view>
+

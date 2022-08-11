@@ -1,0 +1,91 @@
+/* pages/recommendSong/recommendSong.wxss */
+/* 头部 */
+.recommendSongContainer {
+    .header {
+        position: relative;
+        width: 100%;
+        height: 300rpx;
+
+        image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .date {
+            position: absolute;
+            left: 32%;
+            top: 40%;
+
+            width: 300rpx;
+            height: 100rpx;
+            text-align: center;
+            line-height: 100rpx;
+            color: white;
+            font-size: 40rpx;
+
+            .month {
+                font-size: 60rpx;
+            }
+        }
+    }
+
+    /* 列表 */
+    .ListContainer {
+        position: relative;
+        top: -20rpx;
+        padding: 0 20rpx;
+        border-radius: 30rpx;
+        background: #fff;
+    }
+
+    .listHeader {
+        height: 80rpx;
+        line-height: 80rpx;
+
+        .changeMore {
+            float: right;
+        }
+    }
+
+    /* 歌曲 */
+    .listScroll {
+        height: calc(100vh - 380rpx);
+        /*整体高度减去除了scroll-view的元素的高度，即可得到只使得scroll-view元素滑动效果*/
+    }
+
+    .scrollItem {
+        display: flex;
+        position: relative;
+        margin-bottom: 20rpx;
+        image {
+            height: 80rpx;
+            width: 80rpx;
+            border-radius: 8rpx;
+        }
+        .iconfont {
+            position: absolute;
+            right: 10rpx;
+            width: 80rpx;
+            height: 80rpx;
+            text-align: right;
+        }
+    }
+    .musicInfo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20rpx;
+        text {
+            height: 40rpx;
+            line-height: 40rpx;
+            font-size: 26rpx;
+            max-width: 400rpx;
+            /*最长文本长度*/
+            white-space: nowrap;
+            /*不允许换行*/
+            overflow: hidden;
+            /*超过部分隐藏*/
+            text-overflow: ellipsis;
+            /*超过部分换为省略号*/
+        }
+    }
+}
